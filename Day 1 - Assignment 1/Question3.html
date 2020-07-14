@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 3</title>
+    </head>
+    <body>
+        <script>
+            today = new Date(); 
+            var dd = today.getDate();  // 1 to 31
+            var mm = today.getMonth()+1; //0 to 11
+            var yyyy = today.getFullYear();
+
+            if(dd<10) 
+                dd='0'+dd;
+            if(mm<10) 
+                mm='0'+mm;
+            
+            fulldate = mm+"-"+dd+"-"+yyyy;
+            document.write(fulldate+"<br>")
+            fulldate = mm+"/"+dd+"/"+yyyy;
+            document.write(fulldate+"<br>")
+            fulldate = dd+"-"+mm+"-"+yyyy;
+            document.write(fulldate+"<br>")
+            fulldate = dd+"/"+mm+"/"+yyyy;
+            document.write(fulldate+"<br>")
+        </script>
+    </body>
+</html>
