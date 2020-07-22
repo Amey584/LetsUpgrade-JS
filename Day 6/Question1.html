@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 - Change Background Color</title>
+</head>
+<body>
+    <p>Change background Color of body on interval of 5 second</p>
+    <script>
+        var i = 0;
+        function change() {
+        var color = ["orange", "blue", "red", "green","yellow","grey"];
+        document.body.style.backgroundColor = color[i];
+        i = (i + 1) % color.length;
+        }
+        setInterval(change, 5000);
+    </script>
+    
+</body>
+</html>
